@@ -1,0 +1,7 @@
+# ninja log v5
+0	330	637440559	CMakeFiles/rt_sample_new.dir/Material.cpp.obj	caebcf2ec2c7867
+19	347	637440559	CMakeFiles/rt_sample_new.dir/Geometry.cpp.obj	655cd3379e328b18
+37	393	637440559	CMakeFiles/rt_sample_new.dir/RayTracer.cpp.obj	d3e53a6c38e58b98
+11	668	637440559	CMakeFiles/rt_sample_new.dir/Camera.cpp.obj	c2adb42a393e46ab
+28	739	637440560	CMakeFiles/rt_sample_new.dir/main.cpp.obj	790e22c0f2fea510
+740	1320	637440560	rt_sample_new.exe	af19905188077361

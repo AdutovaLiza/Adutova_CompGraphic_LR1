@@ -1,0 +1,3 @@
+C:/Users/Lenovo-PC/source/repos/6 семестр/Комп графика/Adutova_1/2021-graphics-rt-main/Lab_1_2021_RT/out/build/x64-Debug (default)/CMakeFiles/rt_sample_new.dir
+C:/Users/Lenovo-PC/source/repos/6 семестр/Комп графика/Adutova_1/2021-graphics-rt-main/Lab_1_2021_RT/out/build/x64-Debug (default)/CMakeFiles/edit_cache.dir
+C:/Users/Lenovo-PC/source/repos/6 семестр/Комп графика/Adutova_1/2021-graphics-rt-main/Lab_1_2021_RT/out/build/x64-Debug (default)/CMakeFiles/rebuild_cache.dir
