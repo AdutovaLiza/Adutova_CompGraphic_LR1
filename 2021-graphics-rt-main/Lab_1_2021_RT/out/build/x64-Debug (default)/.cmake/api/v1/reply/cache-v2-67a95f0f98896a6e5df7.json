@@ -35,7 +35,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "c:/Users/Lenovo-PC/source/repos/6 семестр/Комп графика/Adutova_1/2021-graphics-rt-main/Lab_1_2021_RT/out/build/x64-Debug (default)"
+			"value" : "c:/Users/Lenovo-PC/source/repos/6 семестр/Комп графика/Adutova_1/Adutova_CompGraphic_LR1/2021-graphics-rt-main/Lab_1_2021_RT/out/build/x64-Debug (default)"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -511,7 +511,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Users/Lenovo-PC/source/repos/6 семестр/Комп графика/Adutova_1/2021-graphics-rt-main/Lab_1_2021_RT"
+			"value" : "C:/Users/Lenovo-PC/source/repos/6 семестр/Комп графика/Adutova_1/Adutova_CompGraphic_LR1/2021-graphics-rt-main/Lab_1_2021_RT"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -523,7 +523,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "C:/Users/Lenovo-PC/source/repos/6 семестр/Комп графика/Adutova_1/2021-graphics-rt-main/Lab_1_2021_RT/out/install/x64-Debug (default)"
+			"value" : "C:/Users/Lenovo-PC/source/repos/6 семестр/Комп графика/Adutova_1/Adutova_CompGraphic_LR1/2021-graphics-rt-main/Lab_1_2021_RT/out/install/x64-Debug (default)"
 		},
 		{
 			"name" : "CMAKE_LINKER",
@@ -1047,7 +1047,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/Lenovo-PC/source/repos/6 семестр/Комп графика/Adutova_1/2021-graphics-rt-main/Lab_1_2021_RT/out/build/x64-Debug (default)"
+			"value" : "C:/Users/Lenovo-PC/source/repos/6 семестр/Комп графика/Adutova_1/Adutova_CompGraphic_LR1/2021-graphics-rt-main/Lab_1_2021_RT/out/build/x64-Debug (default)"
 		},
 		{
 			"name" : "rt_sample_new_SOURCE_DIR",
@@ -1059,7 +1059,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/Lenovo-PC/source/repos/6 семестр/Комп графика/Adutova_1/2021-graphics-rt-main/Lab_1_2021_RT"
+			"value" : "C:/Users/Lenovo-PC/source/repos/6 семестр/Комп графика/Adutova_1/Adutova_CompGraphic_LR1/2021-graphics-rt-main/Lab_1_2021_RT"
 		}
 	],
 	"kind" : "cache",

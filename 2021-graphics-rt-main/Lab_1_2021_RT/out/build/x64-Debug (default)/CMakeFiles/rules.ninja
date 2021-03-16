@@ -47,7 +47,7 @@ rule CUSTOM_COMMAND
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -S"C:\Users\Lenovo-PC\source\repos\6 семестр\Комп графика\Adutova_1\2021-graphics-rt-main\Lab_1_2021_RT" -B"C:\Users\Lenovo-PC\source\repos\6 семестр\Комп графика\Adutova_1\2021-graphics-rt-main\Lab_1_2021_RT\out\build\x64-Debug (default)"
+  command = "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -S"C:\Users\Lenovo-PC\source\repos\6 семестр\Комп графика\Adutova_1\Adutova_CompGraphic_LR1\2021-graphics-rt-main\Lab_1_2021_RT" -B"C:\Users\Lenovo-PC\source\repos\6 семестр\Комп графика\Adutova_1\Adutova_CompGraphic_LR1\2021-graphics-rt-main\Lab_1_2021_RT\out\build\x64-Debug (default)"
   description = Re-running CMake...
   generator = 1
 

@@ -1,8 +1,8 @@
-# Install script for directory: C:/Users/Lenovo-PC/source/repos/6 семестр/Комп графика/Adutova_1/2021-graphics-rt-main/Lab_1_2021_RT
+# Install script for directory: C:/Users/Lenovo-PC/source/repos/6 семестр/Комп графика/Adutova_1/Adutova_CompGraphic_LR1/2021-graphics-rt-main/Lab_1_2021_RT
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Users/Lenovo-PC/source/repos/6 семестр/Комп графика/Adutova_1/2021-graphics-rt-main/Lab_1_2021_RT/out/install/x64-Debug (default)")
+  set(CMAKE_INSTALL_PREFIX "C:/Users/Lenovo-PC/source/repos/6 семестр/Комп графика/Adutova_1/Adutova_CompGraphic_LR1/2021-graphics-rt-main/Lab_1_2021_RT/out/install/x64-Debug (default)")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/Lenovo-PC/source/repos/6 семестр/Комп графика/Adutova_1/2021-graphics-rt-main/Lab_1_2021_RT/out/build/x64-Debug (default)/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/Lenovo-PC/source/repos/6 семестр/Комп графика/Adutova_1/Adutova_CompGraphic_LR1/2021-graphics-rt-main/Lab_1_2021_RT/out/build/x64-Debug (default)/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
