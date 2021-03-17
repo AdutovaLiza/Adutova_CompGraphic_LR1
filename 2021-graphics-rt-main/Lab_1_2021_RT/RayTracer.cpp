@@ -5,7 +5,6 @@
 #include "Lighting.h"
 
 //Базовый алгоритм трассировки луча
-//float3 SimpleRT::TraceRay(const Ray & ray, const std::vector<std::shared_ptr<GeoObject>> &geo, const int &depth)
 float3 SimpleRT::TraceRay(const Ray& ray, const std::vector<std::shared_ptr<GeoObject>>& geo)
 {
   float tnear = std::numeric_limits<float>::max();
@@ -53,8 +52,7 @@ float3 WhittedRT::TraceRay(const Ray& ray, const std::vector<std::shared_ptr<Geo
 	float3 timeColor = float3(1.0f, 1.0f, 1.0f);
 	SurfHit surf;
 	Ray timeRay = ray;
-	
-	
+
 	while(1)
 	{
 		color *= timeColor;
