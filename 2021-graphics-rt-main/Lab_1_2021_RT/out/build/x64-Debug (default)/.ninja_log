@@ -65,3 +65,15 @@
 10	601	637686322	CMakeFiles/rt_sample_new.dir/Camera.cpp.obj	c2adb42a393e46ab
 14	684	637686322	CMakeFiles/rt_sample_new.dir/main.cpp.obj	790e22c0f2fea510
 684	893	637686322	rt_sample_new.exe	af19905188077361
+6	551	637686421	CMakeFiles/rt_sample_new.dir/Material.cpp.obj	caebcf2ec2c7867
+23	552	637686421	CMakeFiles/rt_sample_new.dir/RayTracer.cpp.obj	d3e53a6c38e58b98
+1	553	637686421	CMakeFiles/rt_sample_new.dir/Geometry.cpp.obj	655cd3379e328b18
+12	648	637686421	CMakeFiles/rt_sample_new.dir/Camera.cpp.obj	c2adb42a393e46ab
+17	751	637686421	CMakeFiles/rt_sample_new.dir/main.cpp.obj	790e22c0f2fea510
+752	1048	637686421	rt_sample_new.exe	af19905188077361
+6	312	637686440	CMakeFiles/rt_sample_new.dir/Geometry.cpp.obj	655cd3379e328b18
+11	318	637686440	CMakeFiles/rt_sample_new.dir/Material.cpp.obj	caebcf2ec2c7867
+21	342	637686440	CMakeFiles/rt_sample_new.dir/RayTracer.cpp.obj	d3e53a6c38e58b98
+1	582	637686440	CMakeFiles/rt_sample_new.dir/Camera.cpp.obj	c2adb42a393e46ab
+15	662	637686440	CMakeFiles/rt_sample_new.dir/main.cpp.obj	790e22c0f2fea510
+662	859	637686441	rt_sample_new.exe	af19905188077361

@@ -15,7 +15,7 @@ struct Scene {
 
 void RenderScene(uint32_t w, uint32_t h, uint32_t num_samples, const Scene &scene, const Camera &cam, const std::string &filename)
 {
-  auto  background_color = float3(0.1f, 0.1f, 0.1f);
+  auto  background_color = float3(0.1f, 0.1f, 0.5f);
   auto  film = std::make_unique<Film>(w, h, num_samples);
   auto  tracer = std::make_unique<WhittedRT>(16, background_color);
   float invWidth  = 1.0f / float(w);
