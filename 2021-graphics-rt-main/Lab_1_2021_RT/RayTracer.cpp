@@ -100,7 +100,7 @@ float3 WhittedRT::TraceRay(const Ray& ray, const std::vector<std::shared_ptr<Geo
 		if (typeid(*surf.m_ptr) != typeid(Light))
 		{
 			
-			if ((typeid(*surf.m_ptr).name() == typeid(Defuse_material).name())) 
+			if ((typeid(*surf.m_ptr).name() == typeid(Diffusion_material).name()))
 			{
 				timeColor = float3(0.0f, 0.0f, 0.0f);
 				float3 time;

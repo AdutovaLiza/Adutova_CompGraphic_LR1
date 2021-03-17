@@ -43,10 +43,10 @@ public:
   float3 color;
 };
 
-class Defuse_material : public Material
+class Diffusion_material : public Material
 {
 public:
-	Defuse_material(const float3& a_color) : Material(), color(a_color) {};
+	Diffusion_material(const float3& a_color) : Material(), color(a_color) {};
 
 	bool Scatter(const Ray& ray_in, const SurfHit& surf, float3& attenuation, Ray& ray_out) override;
 

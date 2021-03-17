@@ -44,13 +44,12 @@ void create_scene()
 {
   Scene myScene;
   //объекты
-  auto plane = std::make_shared<Plane>(float3(-2.0f, -1.0f, +0.0f), float3(0.0f, 1.0f, 0.0f), new IdealMirror(float3(0.5f, 0.5f, 0.5f)));
-
+  auto plane = std::make_shared<Plane>(float3(-2.0f, -1.0f, +0.0f), float3(0.0f, 1.0f, 0.0f), new IdealMirror(float3(1.0f, 0.5f, 1.0f)));
   auto sphere1= std::make_shared<Sphere>(float3(5.0f, 2.0f, 2.0f), 5, new IdealMirror(float3(1.00f, 5.0f, 7.0f)));
-  auto sphere2= std::make_shared<Sphere>(float3(-2.0f, 9.0f, 3.0f), 2.5, new Defuse_material(float3(3.0f, 0.5f, 0.5f)));
-
-  auto triangle = std::make_shared<Triangle>(float3(8.0f, 15.0f, 2.0f), float3(10.0f, 13.0f, 4.0f), float3(5.0f, 10.0f, 3.0f), new IdealMirror(float3(2.00f, 5.0f, 4.36f)));
-  auto square1  = std::make_shared<Square>(float3(-15.0f, -0.0f, -10.0f), 5,new Defuse_material(float3(3.00f, 4.0f, 7.0f)));
+  auto sphere2= std::make_shared<Sphere>(float3(-2.0f, 9.0f, 3.0f), 2.5, new Diffusion_material(float3(3.0f, 0.5f, 0.5f)));
+  auto triangle1 = std::make_shared<Triangle>(float3(8.0f, 15.0f, 2.0f), float3(10.0f, 13.0f, 4.0f), float3(5.0f, 10.0f, 3.0f), new IdealMirror(float3(2.00f, 5.0f, 4.36f)));
+  auto triangle2 = std::make_shared<Triangle>(float3(5.0f, 12.0f, 2.0f), float3(7.0f, 5.0f, 4.0f), float3(2.0f, 11.0f, 0.0f), new Diffusion_material(float3(0.5f, 1.0f, 1.0f)));
+  auto square1  = std::make_shared<Square>(float3(-15.0f, -0.0f, -10.0f), 5,new Diffusion_material(float3(3.00f, 4.0f, 7.0f)));
   auto square2 = std::make_shared<Square>(float3(10.0f, 5.0f, 5.0f), 3, new IdealMirror(float3(0.5f, 1.0f, 1.0f)));
   auto  parallelepiped  = std::make_shared<Parallelepiped>(float3(-5.0f, 10.0f, 1.0f), float3(-11.0f, 6.0f, -1.0f), new IdealMirror(float3(3.0f, 5.0f, 0.5f)));
 
@@ -61,7 +60,8 @@ void create_scene()
  myScene.geoObjects.push_back(plane);
  myScene.geoObjects.push_back(sphere1);
  myScene.geoObjects.push_back(sphere2);
- myScene.geoObjects.push_back(triangle);
+ myScene.geoObjects.push_back(triangle1);
+ myScene.geoObjects.push_back(triangle2);
  myScene.geoObjects.push_back(square1);
  myScene.geoObjects.push_back(square2);
  myScene.geoObjects.push_back(parallelepiped);

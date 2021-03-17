@@ -32,7 +32,7 @@ bool IdealMirror::Scatter(const Ray &ray_in, const SurfHit &surf, float3 &attenu
     return (dot(ray_out.d, surf.normal) > 0);
 }
 
-bool Defuse_material::Scatter(const Ray& ray_in, const SurfHit& surf, float3& attenuation, Ray& ray_out)
+bool Diffusion_material::Scatter(const Ray& ray_in, const SurfHit& surf, float3& attenuation, Ray& ray_out)
 {
     float coef = dot(normalize(surf.normal), ray_in.d);
     attenuation = color * max(coef, 0.0f);
