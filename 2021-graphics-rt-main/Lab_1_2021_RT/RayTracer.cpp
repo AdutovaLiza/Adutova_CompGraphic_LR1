@@ -41,9 +41,7 @@ float3 SimpleRT::TraceRay(const Ray& ray, const std::vector<std::shared_ptr<GeoO
   {
     surf.normal = -surf.normal;
   }
-
-  
- 
+   
 }
 
  // Уиттед

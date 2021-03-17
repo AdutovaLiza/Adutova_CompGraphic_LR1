@@ -30,7 +30,6 @@ void RenderScene(uint32_t w, uint32_t h, uint32_t num_samples, const Scene &scen
       for (int s = 0; s < num_samples; ++s)
       {
         Ray ray = cam.genRay(w, h, x, h - y); //генерируем луч из камеры через текущий пиксель
-        //pixel_color += tracer->TraceRay(ray, scene.geoObjects, scene.lights, 0); //трассируем луч и получаем цвет
         pixel_color += tracer->TraceRay(ray, scene.geoObjects, scene.lights);
       }
       pixel_color /= film->num_samples;      // усредняем полученные цвета
