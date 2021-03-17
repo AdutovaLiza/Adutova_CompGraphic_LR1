@@ -17,7 +17,7 @@ void RenderScene(uint32_t w, uint32_t h, uint32_t num_samples, const Scene &scen
 {
   auto  background_color = float3(0.1f, 0.1f, 0.5f);
   auto  film = std::make_unique<Film>(w, h, num_samples);
-  auto  tracer = std::make_unique<WhittedRT>(16, background_color);
+  auto  tracer = std::make_unique<WhittedRT>(background_color);
   float invWidth  = 1.0f / float(w);
   float invHeight = 1.0f / float(h);
 
@@ -30,7 +30,8 @@ void RenderScene(uint32_t w, uint32_t h, uint32_t num_samples, const Scene &scen
       for (int s = 0; s < num_samples; ++s)
       {
         Ray ray = cam.genRay(w, h, x, h - y); //генерируем луч из камеры через текущий пиксель
-        pixel_color += tracer->TraceRay(ray, scene.geoObjects, scene.lights, 0); //трассируем луч и получаем цвет
+        //pixel_color += tracer->TraceRay(ray, scene.geoObjects, scene.lights, 0); //трассируем луч и получаем цвет
+        pixel_color += tracer->TraceRay(ray, scene.geoObjects, scene.lights);
       }
       pixel_color /= film->num_samples;      // усредняем полученные цвета
       pixel_color *= cam.getExposureTime();  // умножаем на время экспонирования сенсора - выдержка виртуальной камеры
@@ -55,7 +56,6 @@ void create_scene()
 
   // освещение
   auto light1 = std::make_shared<Lighting>(float3(-10.0f, 16.0f, 3.0f), float3(1.0f, 1.0f, 1.0f));
- 
 
  myScene.geoObjects.push_back(plane);
  myScene.geoObjects.push_back(sphere1);

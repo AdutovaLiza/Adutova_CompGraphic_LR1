@@ -29,13 +29,14 @@ class SimpleRT
 {
 public:
   SimpleRT() = default;
-  SimpleRT(const int &a_max_ray_depth, const float3 &a_bg_color) : max_ray_depth(a_max_ray_depth), bg_color(a_bg_color){};
+ // SimpleRT(const int &a_max_ray_depth, const float3 &a_bg_color) : max_ray_depth(a_max_ray_depth), bg_color(a_bg_color){};
+  SimpleRT( const float3& a_bg_color) : bg_color(a_bg_color) {};
   ~SimpleRT() = default;
 
-  float3 TraceRay(const Ray &ray, const std::vector<std::shared_ptr<GeoObject>> &geo, const int &depth);
-
+  //float3 TraceRay(const Ray &ray, const std::vector<std::shared_ptr<GeoObject>> &geo, const int &depth);
+  float3 TraceRay(const Ray& ray, const std::vector<std::shared_ptr<GeoObject>>& geo);
 private:
-  int max_ray_depth; // максимальная глубина трассировки
+  //int max_ray_depth; // максимальная глубина трассировки
   float3 bg_color;   // цвет фона
 };
 
@@ -44,14 +45,16 @@ class WhittedRT
 {
 public:
 	WhittedRT() = default;
-	WhittedRT(const int& a_max_ray_depth, const float3& a_bg_color) : max_ray_depth(a_max_ray_depth), bg_color(a_bg_color) {};
+	//WhittedRT(const int& a_max_ray_depth, const float3& a_bg_color) : max_ray_depth(a_max_ray_depth), bg_color(a_bg_color) {};
+	WhittedRT(const float3& a_bg_color) : bg_color(a_bg_color) {};
 	~WhittedRT() = default;
 
-	float3 TraceRay(const Ray& ray, const std::vector<std::shared_ptr<GeoObject>>& objects, const std::vector<std::shared_ptr<Lighting>>& light, int depth);
+	//float3 TraceRay(const Ray& ray, const std::vector<std::shared_ptr<GeoObject>>& objects, const std::vector<std::shared_ptr<Lighting>>& light, int depth);
+	float3 TraceRay(const Ray& ray, const std::vector<std::shared_ptr<GeoObject>>& objects, const std::vector<std::shared_ptr<Lighting>>& light);
 	bool ShadowRay(const Ray& ray, const std::vector<std::shared_ptr<GeoObject>>& objects);
 
 private:
-	int max_ray_depth; // максимальная глубина трассировки
+	//int max_ray_depth; // максимальная глубина трассировки
 	float3 bg_color;   // цвет фона
 };
 #endif //RT_SAMPLE_NEW_RAY_H

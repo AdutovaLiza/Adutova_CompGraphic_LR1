@@ -5,7 +5,8 @@
 #include "Lighting.h"
 
 //Базовый алгоритм трассировки луча
-float3 SimpleRT::TraceRay(const Ray & ray, const std::vector<std::shared_ptr<GeoObject>> &geo, const int &depth)
+//float3 SimpleRT::TraceRay(const Ray & ray, const std::vector<std::shared_ptr<GeoObject>> &geo, const int &depth)
+float3 SimpleRT::TraceRay(const Ray& ray, const std::vector<std::shared_ptr<GeoObject>>& geo)
 {
   float tnear = std::numeric_limits<float>::max();
   int   geoIndex = -1;
@@ -42,26 +43,20 @@ float3 SimpleRT::TraceRay(const Ray & ray, const std::vector<std::shared_ptr<Geo
     surf.normal = -surf.normal;
   }
 
-  Ray scattered; 
-  if(depth < max_ray_depth && surf.m_ptr->Scatter(ray, surf, surfColor, scattered))
-  {
-    return surfColor * TraceRay(scattered, geo, depth + 1);
-  }
-  else
-  {
-    return float3(0.0f, 0.0f, 0.0f);
-  }
+  
  
 }
 
  // Уиттед
-float3 WhittedRT::TraceRay(const Ray& ray, const std::vector<std::shared_ptr<GeoObject>>& objects, const std::vector<std::shared_ptr<Lighting>>& light, int depth) {
+float3 WhittedRT::TraceRay(const Ray& ray, const std::vector<std::shared_ptr<GeoObject>>& objects, const std::vector<std::shared_ptr<Lighting>>& light) {
 	float3 color = float3(1.0f, 0.9f, 0.8f);
 	float3 timeColor = float3(1.0f, 1.0f, 1.0f);
 	SurfHit surf;
 	Ray timeRay = ray;
 	
-	while (depth < max_ray_depth) {//количество отражений меньше максимального
+	
+	while(1)
+	{
 		color *= timeColor;
 		float tnear = std::numeric_limits<float>::max();
 
@@ -89,7 +84,6 @@ float3 WhittedRT::TraceRay(const Ray& ray, const std::vector<std::shared_ptr<Geo
 			float t = 0.5f * (unit_direction.y + 1.0f);
 			timeColor = (1.0f - t) * float3(1.0f, 1.0f, 1.0f) + t * bg_color;
 
-			depth++;
 			break;
 		}
 
@@ -126,11 +120,9 @@ float3 WhittedRT::TraceRay(const Ray& ray, const std::vector<std::shared_ptr<Geo
 			else if (surf.m_ptr->Scatter(timeRay, surf, timeColor, scattered))// пересечение с зеркалом
 			{
 				timeRay = scattered;
-				depth++;
 			}
 			else
 			{
-				depth++;
 				timeColor = float3(0.0f, 0.0f, 0.0f);
 			}
 		}
